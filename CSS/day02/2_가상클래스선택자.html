@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가상클래스 선택자</title>
+    <style>
+        .list > li:first-child {
+            color: deeppink;
+        }
+
+        .list > li:last-child {
+            color: deepskyblue;
+        }
+
+        .list > li:nth-child(2) {
+            color: darkviolet;
+        }
+
+        .list > li:nth-child(odd) {
+            background-color: gold;
+        }
+
+        .list > li:nth-child(even) {
+            background-color: blanchedalmond;
+        }
+
+        .list > li:nth-child(1), .list > li:nth-child(4) {
+            font-weight: bold;
+        }
+
+        .list > li:nth-child(3n) /*todo 3의 배수 */
+        {
+            font-size: 30px;
+        }
+
+        .list>li:nth-child(-1+3){
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<h2>가상클래스 선택자</h2>
+<ul class="list">
+    <li>김사과</li>
+    <li>반하나</li>
+    <li>이체리</li>
+    <li>차두리</li>
+    <li>최포도</li>
+    <li>헤이즈</li>
+</ul>
+</body>
+</html>

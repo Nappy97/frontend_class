@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가상 요소 선택자</title>
+    <style>
+        .tx1::before {
+            content: "☆";
+            color: red;
+        }
+
+        .tx2::after {
+            content: "★";
+            color: blue;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: mediumspringgreen;
+        }
+
+        a:link {
+            color: lightblue;
+        }
+
+        a:hover {
+            color: magenta;
+        }
+
+        a:active {
+            color: mediumpurple;
+        }
+    </style>
+</head>
+<body>
+<h2>가상 요소 선택자</h2>
+<p class="tx1">before</p>
+<p class="tx2">after</p>
+<a href="https://www.naver.com">네이버</a>
+<a href="https://aksldkhnjksk.com">여긴 어디?</a>
+
+</body>
+</html>
