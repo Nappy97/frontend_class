@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation - 2</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            background-color: deeppink;
+            animation: rotate 1.5s infinite alternate;
+        }
+        @keyframes rotate {
+            0%{
+
+            }
+            50%{
+                transform:  rotate(-180deg);
+                background-color: pink;
+            }
+            100%{
+                transform: rotate(-180deg);
+                background-color: deeppink;
+            }
+        }
+    </style>
+</head>
+<body>
+<h2>animation - 2</h2>
+<div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation - 1</title>
+    <style>
+        .box {
+            box-sizing: border-box;
+            border: 1px solid black;
+            margin-top: 100px;
+            margin-left: 100px;
+            padding: 20px;
+            height: 80px;
+            /*animation-name: moving;*/
+            /*animation-duration: 3s;*/
+            /*animation-iteration-count: infinite;*/
+            /*animation-direction: alternate;*/
+            animation: moving 3s infinite alternate;
+
+        }
+
+        @keyframes moving {
+            from {
+                width: 170px;
+                background-color: ghostwhite;
+                padding-left: 10px;
+                opacity: 0.5;
+                transform: scale(0.5) rotate(30deg);
+            }
+            50%{
+                width: 300px;
+                background-color: honeydew;
+                opacity: 1;
+                padding-left: 140px;
+                transform: scale(1) rotate(-15deg);
+            }
+            100%{
+                width: 300px;
+                background-color: honeydew;
+                opacity: 1;
+                padding-left: 140px;
+                transform: rotate(-180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<h2>animation - 1</h2>
+<div class="box">
+    <h3>CSS Animation</h3>
+</div>
+</body>
+</html>
