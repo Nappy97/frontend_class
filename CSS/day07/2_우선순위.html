@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>우선순위</title>
+    <style>
+        .important {
+            background-color: darkorange !important;
+
+        }
+
+        div {
+            display: block;
+            padding: 30px;
+            margin: 10px;
+            background-color: aliceblue;
+            border: 1px solid black;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #id-style {
+            background-color: skyblue;
+        }
+
+        .class-style {
+            background-color: red;
+        }
+
+        .class-style2 {
+            background-color: blue;
+        }
+
+        div {
+            background-color: green;
+        }
+
+        ul>li.li-class{
+            background-color: cornsilk;
+            color: darkviolet;
+        }
+        ul > li {
+            color: springgreen;
+        }
+
+        li {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+<h2>우선순위</h2>
+<div id="id-style" class="class-style important" style="background-color: violet">div 1번(!important 적용 우선 /
+    darkorange)
+</div>
+<div id="id-style" class="class-style" style="background-color: violet">div 2번(인라인 스타일 적용 -> violet)</div>
+<div id="id-style">div 3번(id 스타일 적용 / 100점 -> skyblue)</div>
+<div class="class-style">div 4번(class 스타일 적용 / 10점 -> red)</div>
+<div>div 5번(마지막으로 지정한 스타일이 적용 / green)</div>
+<div class="class-style class-style2"></div>
+<div class="class-style" class="class-style2">똑같은 속성을 여러개 쓴 경우 앞에 작성한 스타일 우선</div>
+
+<ul>
+    <li class="li-class">li 1번</li>
+</ul>
+</body>
+</html>
