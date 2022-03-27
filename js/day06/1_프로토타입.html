@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>프로토타입</title>
+</head>
+<body>
+<h2>프로토타입</h2>
+<script>
+    function Car(brand, color, price) {
+        this.brand = brand;
+        this.color = color;
+        this.price = price;
+    }
+
+    const mycar = new Car("Ferrari", "Red", 65000);
+    const momcar = new Car("K9", "White", 4000);
+
+    mycar.mode = "스포츠모드";
+    mycar.roofOpen = function () {
+        console.log(this.brand + " 뚜껑열기");
+    }
+    mycar.roofOpen();
+
+    Car.prototype.wheel = 4;
+    Car.prototype.enginStart = function () {
+        console.log(this.brand + " 시동켜기");
+    }
+
+    console.log('내 차의 바퀴 개수 : ' + mycar.wheel);
+    console.log('엄마 차의 바퀴 개수 : ' + momcar.wheel);
+
+    mycar.enginStart();
+    momcar.enginStart();
+
+    function Test(intdata) {
+        this.intdata = intdata;
+    }
+
+    const obj1 = new Test(10);
+    const obj2 = new Test(200);
+    obj2.strdata = "Hello";
+    const obj3 = new Test(30);
+    obj3.strdata = "Bye";
+    obj3.doubledata = 1.35;
+</script>
+</body>
+</html>

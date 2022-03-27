@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>생성자</title>
+</head>
+<body>
+<h2>생성자</h2>
+<script>
+    function Car(brand, color, price) {
+        this.brand = null;
+        this.color = null;
+        this.price = 0;
+
+        this.enginStart = function () {
+            console.log(this.brand + " 시동켜기");
+        }
+        this.enginStop = function () {
+            console.log(this.brand + " 시동끄기");
+        }
+    }
+
+    const mycar = new Car("Ferrari", "Red", 65000);
+    const momcar = new Car("K9", "White", 4000);
+
+    console.log(mycar);
+    console.log(momcar);
+
+    mycar.enginStart();
+    mycar.engineStop();
+</script>
+</body>
+</html>

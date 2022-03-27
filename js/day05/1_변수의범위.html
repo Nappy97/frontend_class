@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>변수의 범위</title>
+</head>
+<body>
+<h2>변수의 범위</h2>
+<script>
+    function f1() {
+        let num1 = 10;
+        console.log('f1() 내부에서 출력한 num1 : ' + num1);
+    }
+
+    function f2() {
+        let num1 = 20;
+        console.log('f2() 내부에서 출력한 num1 : ' + num1);
+    }
+
+    function f3() {
+        console.log('f3() 내부에서 출력한 num2 : ' + num2);
+        num2 = 200;
+    }
+    function f4(){
+        let num2 = 300;
+        console.log('f4() 내부에서 출력한 num2 : ' + num2);
+    }
+
+    var num3 = 10000;
+    if(true){
+        num3 = 2000;
+        console.log('if문 내부에서 출력한 num3 : ' + num3);
+    }
+
+    var num4 = 10000;
+    if(true){
+        var num4 = 20000;
+        console.log('if문 내부에서 출력한 num4 : ' + num4);
+    }
+
+    let num5 = 100000;
+    if(true){
+        let num5 = 20000;
+        console.log('if문 내부에서 출력한 num5 : '+num5);
+    }
+</script>
+</body>
+</html>

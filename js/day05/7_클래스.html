@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>클래스</title>
+</head>
+<body>
+<h2>클래스</h2>
+<script>
+    class Car {
+        constructor(brand, color, price) {
+            this.brand = brand;
+            this.color = color;
+            this.price = price;
+        }
+
+        enginStart() {
+            console.log(this.brand + " 시동켜기");
+        }
+
+        enginStart() {
+            console.log(this.brand + " 시동끄기");
+        }
+    }
+
+    const mycar = new Car('Ferrari', 'Red', 65000);
+    mycar.enginStart();
+
+    data=10;
+    console.log(data);
+
+    mycar.wheel = 4;
+    console.log(mycar.wheel);
+</script>
+</body>
+</html>

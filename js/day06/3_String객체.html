@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String 객체</title>
+</head>
+<body>
+<h2>String 객체</h2>
+<script>
+    const str1 = "Hello Javascript!";
+
+    console.log(str1.indexOf('J'));
+    console.log(str1.indexOf('Java'));
+    console.log(str1.indexOf('java'));
+
+    console.log(str1.indexOf('a'));
+    console.log(str1.lastIndexOf('a'));
+
+    console.log(str1[6]);
+    console.log(str1.charAt(6));
+
+    console.log(str1.includes('Java'));
+    console.log(str1.includes('Python'));
+
+    console.log(str1.substring(6))
+    console.log(str1.substring(6, 10))
+    console.log(str1.substr(6, 4));
+
+    const str2 = "apple/banana/cherry/durian"
+    let fruit = str2.split("/");
+    console.log(fruit[2]);
+    "apple/".split("/")
+
+    console.log(str1.replace("Hello", "Bye"));
+    console.log(str1);
+
+    const str3 = "          Javascript          ";
+    console.log(str3 == "Javascript");
+    console.log(str3.trim() == "Javascript");
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>콜백함수</title>
+</head>
+<body>
+<h2>콜백함수</h2>
+<script>
+    function f(callback){
+        console.log("콜백 함수를 호출합니다~!")
+        callback();
+    }
+    function test(){
+        alert("테스트 함수 입니다!");
+    }
+    function test2(){
+        alert("테스트2 함수 입니다!");
+    }
+    f(test);
+    f(test2);
+</script>
+</body>
+</html>

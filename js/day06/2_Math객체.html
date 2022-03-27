@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math 객체</title>
+</head>
+<body>
+<h2>Math 객체</h2>
+<script>
+    console.log(Math.min(1, 10, -10, 1100, 0));
+    console.log(Math.min(1, 10, "-10", 1100, 0));
+    console.log(Math.min(1, 10, "-10", "천백", 0));
+    console.log(Math.max());
+    console.log(Math.min());
+
+    console.log(Math.floor(10.999999999));
+    console.log(Math.floor(-10.000000000001));
+
+    console.log(Math.ceil(10.000000001));
+    console.log(Math.ceil(-10.9999999999));
+
+    console.log(Math.round(10.49));
+    console.log(Math.round(10.50000000000000000000001));
+
+    console.log(Math.round(10.48*10/10));
+
+    for (let i = 0;i<5;i++){
+        console.log('랜덤 숫자 : ${Math.random}')
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date 객체</title>
+</head>
+<body>
+<h2>Date 객체</h2>
+<script>
+    console.log(new Date());
+
+    console.log(new Date(22, 3, 27));
+
+    console.log(new Date(2022, 2, 27));
+    console.log(new Date("2022/03/27"));
+    console.log(new Date("2022-03-27"));
+
+    console.log(new Date(2022, 2, 27, 11, 30, 30));
+
+    console.log(new Date(5284138548657));
+
+    const now = new Date();
+
+    console.log('현재 년도 : ${now.getFullYear()}');
+    console.log('현재 월 : ${now.getMonth()+1')
+    console.log('현재 일 : ${now.getDate()')
+
+    console.log('현재 시 : ${now.getHours()')
+    console.log('현재 분 : ${now.getMinutes()')
+    console.log('현재 초 : ${now.getSeconds()')
+</script>
+</body>
+</html>
