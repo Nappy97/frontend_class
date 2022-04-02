@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>노드제거</title>
+</head>
+<body>
+<h2>노드제거</h2>
+<div id="list">
+    <p>HTML</p>
+    <p id="item">CSS</p>
+    <p id="js" style="background-color: gold; color: deeppink;">JavaScript</p>
+    <p>TypeScript</p>
+</div>
+<button onclick="removeNode();">요소 노드 삭제</button>
+<button onclick="removeAttr();">속성 노드 삭제</button>
+</body>
+<script>
+    const removeNode = function (){
+        const parent = document.getElementById("list");
+        const removeItem = document.getElementById("item");
+
+        const result = parent.removeChild(removeItem);
+        console.dir(result);
+    }
+    const removeAttr = function (){
+        const js = document.getElementById("js");
+        js.removeAttribute("style");
+    }
+</script>
+</html>

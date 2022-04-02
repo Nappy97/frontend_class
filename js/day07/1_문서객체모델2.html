@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>문서객체모델 - 2</title>
+    <script>
+        window.onload = function () {
+            const gnb = document.getElementById("gnb");
+            console.log(gnb.parentNode);
+
+            console.log(gnb.childNodes);
+            console.log(gnb.children);
+
+            const ul =gnb.children[0];
+
+            console.log(ul.nextSibling);
+            console.log(ul.nextElementSibling);
+
+            console.log(ul.children[1]);
+            console.log(ul.children[1].previousSibling);
+            console.log(ul.children[1].previousElementSibling);
+
+            console.log(ul.firstChild);
+            console.log(ul.firstElementChild);
+
+            ul.firstElementChild.style.color = "blue"
+        }
+    </script>
+</head>
+<body>
+<h2>문서객체모델 - 2</h2>
+<div>
+    <nav id="gnb">
+        <ul>
+            <li class="first">내용 1</li>
+            <li>내용 2</li>
+            <li>내용 3</li>
+        </ul>
+    </nav>
+</div>
+</body>
+<!--<script>
+    console.log.dir(document.getElementsByTagName("h2")[0]);
+    document.getElementsByTagName("h2")[0].style.backgroundColor = "red";
+</script>-->
+</html>

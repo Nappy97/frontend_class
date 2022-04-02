@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>노드추가</title>
+    <script>
+        const appendNode = function (){
+            const parent = document.getElementById('list');
+            const newItem = document.getElementById('item1');
+            parent.appendChild(newItem);
+        }
+        const insertNode = function (){
+            const parent = document.getElementById('list');
+            const backend = document.getElementById('backend');
+            const newItem = document.getElementById('item2');
+            parent.insertBefore(newItem,backend);
+        }
+        const appendText = function (){
+            const text = document.getElementById("text").firstChild;
+            text.insertData
+        }
+    </script>
+</head>
+<body>
+<h2>노드추가</h2>
+<p id="item1">JavaScript</p>
+<p id="item2">TypeScript</p>
+<hr>
+<div id="list">
+    <p id="backend">node.js</p>
+    <p>HTML</p>
+    <p>CSS</p>
+</div>
+<hr>
+<p id="text">지금 시간은 오전 10시 38분입니다.</p>
+<hr>
+<button onclick="">노드추가1</button>
+<button onclick="">노드추가2</button>
+<button onclick="">텍스트추가</button>
+</body>
+</html>

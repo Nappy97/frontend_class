@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>노드의 생성</title>
+</head>
+<body>
+<h2>노드의 생성</h2>
+<p id="el">새로운 문장이 이 문장 앞에 추가됨</p>
+<p id="attr">이 단락에 새로운 속성이 추가됨</p>
+<p id="text"></p>
+
+<button onclick="createNode();">요소노드생성</button>
+<button onclick="createAttr();">속성노드생성</button>
+<button>텍스트노드생성</button>
+</body>
+<script>
+    const createNode = function (){
+        const elNode = document.getElementById('al');
+        const newNode = document.createElement('p');
+        newNode.innerHTML = "<b>새로운 요소</b>"
+
+        document.body.insertBefore(newNode,elNode);
+    }
+    const createAttr=function (){
+        const attr = document.getElementById("attr");
+        const newAttr = document.createAttribute('style');
+        newAttr.value = "color:deepskyblue; background-color:deeppink;"
+
+        attr.setAttributeNode(newAttr);
+    }
+    const ctrateText = function (){
+        const textNode = document.getElementById("text");
+        const newText = document.createTextNode("emoji");
+
+        textNode.appendChild(newText);
+    }
+</script>
+</html>
