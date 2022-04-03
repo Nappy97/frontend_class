@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<h2>제이쿼리</h2>
+<p id="text">변경될 문자열 입니다</p>
+<button>글자 크기 변경!</button>
+</body>
+<script>
+    $(function (){
+        alert('jQuery의 시작!')
+
+        $("button").on('click',function (){
+            $('#text').css('font-size','25px');
+            $('#text').attr('class','change');
+        })
+    })
+</script>
+</html>

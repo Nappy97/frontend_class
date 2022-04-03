@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이벤트 리스너</title>
+</head>
+<body>
+<h2>이벤트 리스너</h2>
+<p>
+    <button id="eventBtn">이벤트 버튼</button>
+</p>
+<p>
+    <button id="delBtn">이벤트 삭제 버튼</button>
+</p>
+<p id="text">현재 상태</p>
+</body>
+<script>
+    const text = document.getElementById("text");
+    const clickBtn = function () {
+        text.innerHTML = "<b>버튼을 클릭했어요</b>"
+    }
+    const mouseOverBtn = function () {
+        text.innerHTML = "<b>버튼 위에 마우스가 올라갔어요</b>"
+    }
+    const mouseOutBtn = function () {
+        text.innerHTML = "<b>버튼 밖으로 마우스가 나갔어요</b>"
+    }
+
+    btn.addEventListener('click', clickBtn);
+    btn.addEventListener('mouseover', mouseOverBtn);
+    btn.add('mouseout', mouseOutBtn);
+</script>
+</html>
